@@ -16,9 +16,9 @@ public class Product {
     public Product(){}
 
     //contructor
-    public Product(String productName, String decription, double price) {
+    public Product(String productName, String description, double price) {
         this.productName = productName;
-        this.description = decription;
+        this.description = description;
         this.price = price;
     }
  //Setters
@@ -26,8 +26,8 @@ public class Product {
         this.productName = productName;
     }
 
-    public void setDecription(String decription) {
-        this.description = decription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setPrice(double price) {
@@ -43,7 +43,7 @@ public class Product {
         return productName;
     }
 
-    public String getDecription() {
+    public String getDescription() {
         return description;
     }
 
