@@ -1,20 +1,27 @@
 package com.pioneers.co.experiment.Model;
 
-public class UserModel {
-    private int id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
+@Entity
+public class User {
+    
+    private @Id
+    @GeneratedValue Long id;
     private String name;
     private String email;
     private String password;
     
+    User(){}
     //constructor
-   public UserModel(int id,String name,String email, String password){
-        this.id = id;
+   public User(String name,String email, String password){
         this.name = name;
         this.email = email;
         this.email = password;
     }
     //getters
-    public int getId(){
+    public Long getId(){
         return id;
     }
     public  String getName(){
@@ -28,9 +35,6 @@ public class UserModel {
     }
 
     //setters
-    public void setId(int id){
-        this.id = id;
-    }
     public void setName(String name){
         this.name = name;
     }
